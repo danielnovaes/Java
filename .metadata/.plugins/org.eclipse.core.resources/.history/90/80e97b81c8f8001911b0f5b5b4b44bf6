@@ -1,0 +1,27 @@
+package application;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		List<String> lista = new ArrayList<>();
+		
+		lista.add("Maria");
+		lista.add("Daniel");
+		lista.add("Jose");
+		lista.add(2, "Caroline");
+		System.out.println(lista.size());
+		for (String x : lista) {
+			System.out.println(x);
+		}
+
+		System.out.println("----------------");
+		lista.removeIf(x -> x.charAt(0) == 'D');
+		for (String x : lista) {
+			System.out.println(x);
+		}
+	}
+
+}

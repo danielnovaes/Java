@@ -1,0 +1,40 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Produto;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		Produto produto = new Produto();
+		
+		System.out.println("Entre com os dados do produto:");
+		System.out.print("Nome; ");
+		produto.nome = sc.nextLine();
+		System.out.print("Preco: ");
+		produto.preco = sc.nextDouble();
+		System.out.print("Quantidade: ");
+		produto.quantidade = sc.nextInt();
+		
+		System.out.println(produto);
+		
+		System.out.print("Entre com o numero de produtos para adicionar no estoque: ");
+		
+		int quantidade = sc.nextInt();
+		
+		produto.adicionarproduto(quantidade);
+		
+		System.out.println(produto);
+		
+		
+		sc.close();
+	}
+
+}
