@@ -1,0 +1,25 @@
+package entities;
+
+public class ContaNegocio extends Conta{
+
+	private Double LimiteEmprestimo;
+
+	public ContaNegocio() {
+	
+	}
+	
+	public ContaNegocio(Double limiteEmprestimo) {
+		super();
+		LimiteEmprestimo = limiteEmprestimo;
+	}
+
+	public Double getLimiteEmprestimo() {
+		return LimiteEmprestimo;
+	}
+
+	public void setLimiteEmprestimo(Double limiteEmprestimo) {
+		LimiteEmprestimo = limiteEmprestimo;
+	}
+	
+	
+}
